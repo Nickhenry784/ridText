@@ -35,12 +35,12 @@ android_library(
 
 android_build_config(
     name = "build_config",
-    package = "com.rmembersetgamepad",
+    package = "com.riptextgameggpro",
 )
 
 android_resource(
     name = "res",
-    package = "com.rmembersetgamepad",
+    package = "com.riptextgameggpro",
     res = "src/main/res",
 )
 

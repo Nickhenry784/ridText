@@ -1,4 +1,4 @@
-package com.rmembersetgamepad;
+package com.riptextgameggpro;
 
 import com.facebook.react.ReactActivity;
 
