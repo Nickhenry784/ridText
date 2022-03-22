@@ -2,9 +2,13 @@
 export const images = {
   home: {
     banner: require('./home/banner.png'),
-    background: require('./home/night_sky.jpg'),
+    background: require('./home/Background.png'),
     logo: require('./home/logo.png'),
-    gamepad: require('./home/gamepad.png'),
-    button: require('./home/button.png'),
+    shopping: require('./home/Buy.png'),
+    play: require('./home/Play.png'),
+    panelText: require('./home/PanelText.png'),
+    submit: require('./home/Sumbit.png'),
+    turn: require('./home/Turn.png'),
+    inputText: require('./home/Input_text.png'),
   },
 };

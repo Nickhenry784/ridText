@@ -13,6 +13,7 @@
     "@react-native-async-storage/async-storage": "react-native-async-storage/async-storage",
     "immer": "^9.0.12",
     "prop-types": "^15.8.1",
+    "random-words": "^1.1.2",
     "react": "17.0.2",
     "react-native": "0.67.3",
     "react-native-gesture-handler": "^2.3.2",

@@ -1,211 +1,130 @@
 import { StyleSheet } from 'react-native';
 
 export const appStyle = StyleSheet.create({
-  turn: {
-    color: 'white',
-    fontSize: 20,
-    fontWeight: 'bold',
-    position: 'absolute',
-    top: '5%',
-    left: '5%',
-    textShadowColor: 'rgba(0, 0, 0, 0.4)',
-    textShadowOffset: { width: -1, height: 1 },
-    textShadowRadius: 10,
+  appBar: {
+    paddingTop: 10,
+    flex: 0.1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingHorizontal: 20,
+    justifyContent: 'space-between',
+    width: '100%',
   },
-  shoppingButton: {
-    position: 'absolute',
-    top: '4%',
-    right: '4%',
+
+  turnView: {
+    width: 180,
+    height: 60,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
+
+  turnImage: {
+    width: 120,
+    height: 60,
+    resizeMode: 'contain',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 
   shoppingImage: {
+    width: 60,
+    height: 60,
     resizeMode: 'contain',
-    width: 40,
-    height: 40,
   },
-  textBack: {
-    fontSize: 24,
+
+  turnText: {
     color: 'white',
-    position: 'absolute',
-    top: '3%',
-    left: '3%',
+    fontSize: 20,
+    fontFamily: 'Golden Age Shad',
+    paddingLeft: 30,
   },
 
-  textClock: {
-    position: 'relative',
-    top: 20,
-    fontSize: 120,
-    color: 'white',
-    fontWeight: '500',
+  textPanel: {
+    color: 'black',
+    fontSize: 25,
+    fontFamily: 'Golden Age Shad',
   },
 
-  clockStyle: {
-    width: 300,
-    height: 300,
-    flex: 0.52,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-
-  textStartButton: {
-    fontSize: 30,
-    color: 'white',
-    fontWeight: 'bold',
-    position: 'absolute',
-    top: '40%',
-    left: '35%',
-  },
-
-  startImage: {
-    width: 230,
+  playButton: {
+    width: 80,
     height: 80,
   },
 
-  viewCenter: {
-    flex: 1,
+  scoreText: {
+    position: 'absolute',
+    top: '-8%',
+    right: '6%',
+    color: 'white',
+    fontSize: 25,
+    fontFamily: 'Golden Age Shad',
+  },
+
+  bottomText: {
+    color: 'white',
+    fontSize: 20,
+    fontFamily: 'Golden Age Shad',
+  },
+
+  mainView: {
+    flex: 0.9,
+    flexDirection: 'column',
+    width: '100%',
+    alignItems: 'center',
+    justifyContent: 'flex-start',
+  },
+
+  timeText: {
+    color: 'white',
+    fontSize: 100,
+    fontFamily: 'Golden Age Shad',
+  },
+
+  panelImage: {
+    width: 270,
+    height: 220,
+    resizeMode: 'contain',
     alignItems: 'center',
     justifyContent: 'center',
   },
 
-  gamepadImage: {
-    alignContent: 'center',
-    justifyContent: 'center',
-    width: 300,
-    height: 300,
+  playImage: {
+    width: 80,
+    height: 80,
     resizeMode: 'contain',
   },
 
-  inputTopButton: {
-    position: 'absolute',
-    top: '1%',
-    left: '18%',
+  inputImage: {
+    width: 200,
     height: 50,
-    width: 50,
-    borderWidth: 1,
-    backgroundColor: 'white',
-    padding: 15,
-    borderRadius: 10,
-    fontSize: 20,
-  },
-  inputLeftButton: {
-    position: 'absolute',
-    top: '45%',
-    left: '-10%',
-    height: 50,
-    width: 50,
-    borderWidth: 1,
-    backgroundColor: 'white',
-    padding: 15,
-    borderRadius: 10,
-    fontSize: 20,
+    resizeMode: 'contain',
   },
 
-  inputRightButton: {
-    position: 'absolute',
-    bottom: '-12%',
-    left: '37%',
-    height: 50,
-    width: 50,
-    borderWidth: 1,
-    backgroundColor: 'white',
-    padding: 15,
-    borderRadius: 10,
-    fontSize: 20,
-  },
-  inputBottomButton: {
-    position: 'absolute',
-    bottom: '-17%',
-    left: '18%',
-    height: 50,
-    width: 50,
-    borderWidth: 1,
-    backgroundColor: 'white',
-    padding: 15,
-    borderRadius: 10,
-    fontSize: 20,
-  },
-  inputBlueButton: {
-    position: 'absolute',
-    top: '-17%',
-    right: '30%',
-    height: 50,
-    width: 50,
-    borderWidth: 1,
-    backgroundColor: 'white',
-    padding: 15,
-    borderRadius: 10,
-    fontSize: 20,
-  },
-  inputYellowButton: {
-    position: 'absolute',
-    top: '0%',
-    right: '16%',
-    height: 50,
-    width: 50,
-    borderWidth: 1,
-    backgroundColor: 'white',
-    padding: 15,
-    borderRadius: 10,
-    fontSize: 20,
-  },
-  inputRedButton: {
-    position: 'absolute',
-    top: '50%',
-    right: '-10%',
-    height: 50,
-    width: 50,
-    borderWidth: 1,
-    backgroundColor: 'white',
-    padding: 15,
-    borderRadius: 10,
-    fontSize: 20,
-  },
-  inputGreenButton: {
-    position: 'absolute',
-    bottom: '0%',
-    right: '23%',
-    height: 50,
-    width: 50,
-    borderWidth: 1,
-    backgroundColor: 'white',
-    padding: 15,
-    borderRadius: 10,
-    fontSize: 20,
-  },
-
-  startResetView: {
-    flex: 0.2,
-    width: '70%',
+  textView: {
+    width: '80%',
     flexDirection: 'row',
     alignItems: 'center',
-    paddingHorizontal: 5,
     justifyContent: 'space-between',
   },
-  imageButton: {
-    width: 100,
-    height: 30,
-    resizeMode: 'contain',
-  },
-  textButton: {
-    fontSize: 20,
-    textAlign: 'center',
-    fontWeight: 'bold',
-    color: 'white',
-  },
-});
 
-export const musicsStyle = StyleSheet.create({
-  musicWrapper: {
-    position: 'absolute',
-    alignSelf: 'center',
-    bottom: '50%',
+  inputTextLabel: {
+    color: 'white',
+    fontSize: 25,
+    fontFamily: 'Golden Age Shad',
   },
-  musicButton: {
-    padding: 10,
-    backgroundColor: 'gray',
+
+  inputText: {
+    fontSize: 20,
+    fontFamily: 'Golden Age Shad',
+    color: 'white',
+    paddingLeft: 30,
+    textAlign: 'left',
   },
-  musicButtonTitle: {
-    color: 'green',
+
+  submitButton: {
+    width: 120,
+    height: 60,
+    resizeMode: 'contain',
   },
 });
 
@@ -224,13 +143,10 @@ export const layoutStyle = StyleSheet.create({
     height: '40%',
   },
   children: {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    width: '100%',
-    height: '100%',
-    zIndex: 3,
-    elevation: 3,
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'flex-start',
+    flexDirection: 'column',
   },
 });
 
